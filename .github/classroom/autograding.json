@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "Test getSize()",
+      "setup": "",
+      "run": "mvn -B test -Dtest=RotatingBufferInitialTest#getSize --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 0
+    },
+    {
+      "name": "Test negativeSize()",
+      "setup": "",
+      "run": "mvn -B test -Dtest=RotatingBufferInitialTest#negativeSize --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test zeroSize()",
+      "setup": "",
+      "run": "mvn -B test -Dtest=RotatingBufferInitialTest#zeroSize --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test isEmpty()",
+      "setup": "",
+      "run": "mvn -B test -Dtest=RotatingBufferInitialTest#isEmpty --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test isFull()",
+      "setup": "",
+      "run": "mvn -B test -Dtest=RotatingBufferInitialTest#isFull --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test reset()",
+      "setup": "",
+      "run": "mvn -B test -Dtest=RotatingBufferInitialTest#reset --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test concurrent read() and write()",
+      "setup": "",
+      "run": "mvn -B test -Dtest=RotatingBufferReadWriteTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 60,
+      "points": 5
+    }
+  ]
+}
